@@ -19,7 +19,7 @@ void runFLOPSTest(const long iterations) {
 // This function performs the math to simulate workload
 void runTest(const char* type) {
     // We use 'volatile' so the compiler doesn't "skip" the loop for being 'useless'
-    long iterations = 20000000; 
+    long iterations = 40000000; // 40 M operations
     unsigned long startMs = millis(); //outputs the current time in miliseconds
 
     if (strcmp(type, "integer") == 0) {
